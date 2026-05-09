@@ -60,7 +60,7 @@ export default function LetterPage({ content }: LetterPageProps) {
           className="relative"
           initial={{ opacity: 0, y: 40, rotate: -1 }}
           animate={{ opacity: 1, y: 0, rotate: 0 }}
-          transition={{ delay: 0.4, duration: 0.9, ease: [0.34, 1.56, 0.64, 1] }}
+          transition={{ delay: 0.4, duration: 0.9, ease: [0.34, 1.56, 0.64, 1] as [number, number, number, number] }}
         >
           {/* Paper shadows */}
           <div

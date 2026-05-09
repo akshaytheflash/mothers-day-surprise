@@ -20,7 +20,7 @@ export default function Navbar({ activeSection, onNavigate }: NavbarProps) {
       style={{ transform: 'translateX(-50%)' }}
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ delay: 0.3, duration: 0.6, ease: [0.34, 1.56, 0.64, 1] }}
+      transition={{ delay: 0.3, duration: 0.6, ease: [0.34, 1.56, 0.64, 1] as [number, number, number, number] }}
     >
       <div
         className="flex items-center gap-1 px-3 py-2 rounded-full"
