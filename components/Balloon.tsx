@@ -116,8 +116,10 @@ export default function Balloon({ balloon, index, senderName, onPop, isPopped }:
           }}
           exit={{ scale: 0, opacity: 0, y: -40 }}
           transition={{
-            initial: { delay: index * 0.1, type: 'spring', stiffness: 300, damping: 20 },
-            exit: { duration: 0.3 },
+            delay: index * 0.1,
+            type: 'spring',
+            stiffness: 300,
+            damping: 20,
           }}
           whileHover={{ scale: 1.08 }}
           whileTap={{ scale: 0.92 }}
