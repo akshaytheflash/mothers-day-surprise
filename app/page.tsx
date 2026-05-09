@@ -18,8 +18,8 @@ type SurpriseSection = 'home' | 'balloons' | 'letter';
 
 const pageVariants = {
   initial: { opacity: 0, y: 30 },
-  enter: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.34, 1.56, 0.64, 1] } },
-  exit: { opacity: 0, y: -20, transition: { duration: 0.4, ease: 'easeInOut' } },
+  enter: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.34, 1.56, 0.64, 1] as [number, number, number, number] } },
+  exit: { opacity: 0, y: -20, transition: { duration: 0.4, ease: 'easeInOut' as const } },
 };
 
 export default function Home() {
